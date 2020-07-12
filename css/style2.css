@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ 
+  
+  
+  
+  /* RWD */
+  @media screen and (min-width: 768px) {
+    .header {
+     
+      display: flex;
+      align-items: center;
+  
+    }
+
+   
+    
+
+    .header ul {
+      width: 30%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      background-color: white;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      margin-left: auto;
+      
+
+    }
+  
+  
+ 
+  }
+  
+  .banner {
+    height: 650px;
+    border: black;
+    border-style:solid;
+    border-color:black;
+    border-width:5px;
+    padding: 3px;
+    position: relative;
+    justify-content: space-around;
+    
+
+  }
+  
+  
+  
+  
+  .banner .slogan {
+    width: 100%;
+    color: black;
+    
+  }
+
+  
+  
+  .banner .slogan h2 {
+    background:white;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    position: relative;
+    font-size: 36px;
+  }
+
+  .banner .slogan ul{
+
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+
+  .banner .slogan li{
+    text-align: center;
+    line-height: 80px;
+    border:2px black solid;
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    margin-bottom: 150px;
+    display: flex;
+    
+  }
+
+  .banner .slogan li a{
+      text-align: center;
+    line-height: 80px;
+    border:2px black solid;
+    border-radius:50%;
+    width:150px;
+    height:150px;
+    margin-bottom: 150px;
+    display: flex;
+  }
+
+  .banner .slogan a{
+
+    display: flex;
+    justify-content: space-around;
+    border:2px black solid;
+    width:300px;
+    height:100px;
+    text-align:center;
+    line-height:100px;
+  }
+
+ 
+  
+  .table {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .table table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 50px 0px 500px;
+  }
+
+ 
+
+
+  
+  .table table caption {
+    font-size: 24px;
+    margin-bottom: 100px;
+    margin-right: 850px;
+    
+  }
+  
+  
+  .table table thead .tr {
+    background-color: #eee;
+  }
+  
+  .table table thead .tr th:first-child,
+  .table table tbody .tr td:first-child {
+    padding-left: 10px;
+  }
+  
+
+ 
+  
+  .th,
+  .td {
+    padding: 10px 0px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .tr {
+    border-top: 1px solid #ccc;
+  }
+  
+  
+  
+  /* RWD */
+  @media screen and (min-width: 768px) {
+    .table {
+      width: 70%;
+      margin: auto;
+    }
+  
+    .th,
+    .td {
+      font-size: 16px;c
+      text-align: left;
+    }
+  }
+  
+  .information {
+    padding: 50px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: space-around;
+    background: linear-gradient(45deg, grey,black);
+    position: relative;
+  }
+
+ 
+  
+
+  
+ 
+ 
+
+  
+ 
+ 
+  
+  /* RWD */
+  @media screen and (min-width: 768px) {
+
+  
+  .footer {
+    background: #eee;
+    padding: 30px 30px 50px;
+    text-align: center;
+    display: flex;
+      justify-content: space-between;
+   
+  }
+  
+   
+    .footer .contact .text {
+      justify-content: flex-start;
+      flex-direction: row;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      line-height: 2em;
+    }
+  }
+}
+  
