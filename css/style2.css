@@ -1,266 +1,252 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: "Lato", "Noto Sans TC", sans-serif;
 }
 
- 
-  
-  
-  
-  /* RWD */
-  @media screen and (min-width: 768px) {
-    .header {
-     
-      display: flex;
-      align-items: center;
-  
-    }
+.header {
+  width: 100%;
+  margin: 30px 0px;
+}
 
-   
-    
+.header .container,
+.skill .container,
+.autobiography .text,
+.work-experience .container,
+.product .container {
+  width: 80%;
+  margin: auto;
+}
 
-    .header ul {
-      width: 30%;
-      height: auto;
-      display: flex;
-      justify-content: space-around;
-      background-color: white;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-      margin-left: auto;
-      
+.header .container .id h1,
+.skill .container h1,
+.autobiography .text h1,
+.work-experience .container h1,
+.product .container h1 {
+  font-size: 24px;
+  line-height: 2em;
+}
 
-    }
-  
-  
- 
+.skill,
+.autobiography,
+.work-experience,
+.product {
+  margin-bottom: 30px;
+}
+
+.header .container .avatar img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.header .container .id h2,
+.header .container .id p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
+
+.header .container .id .icon {
+  padding: 20px 0px;
+}
+
+.header .container .id .icon a {
+  text-decoration: none;
+  color: gray;
+  font-size: 24px;
+}
+
+.header .container .id .icon a + a {
+  margin-left: 10px;
+}
+
+.header .container .email {
+  color: orangered;
+  text-decoration: nones;
+}
+
+.header .container .email:hover {
+  color: orange;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    /* background-color: orangered; */
   }
-  
-  .banner {
-    height: 650px;
-    border: black;
-    border-style:solid;
-    border-color:black;
-    border-width:5px;
-    padding: 3px;
-    position: relative;
-    justify-content: space-around;
-    
 
+  .header .container .id {
+    margin-left: 30px;
   }
-  
-  
-  
-  
-  .banner .slogan {
+}
+
+.skill .container .item {
+  margin-bottom: 15px;
+}
+
+.skill .container .item h2 {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 15px 0px;
+  border-top: 2px solid gray;
+  /* background-color: orangered; */
+}
+
+.skill .container .item p,
+.skill .container .item ol li {
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+  .skill .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skill .container h1 {
     width: 100%;
-    color: black;
-    
   }
 
-  
-  
-  .banner .slogan h2 {
-    background:white;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    line-height: 1.5em;
-    position: relative;
-    font-size: 36px;
+  .skill .container .item {
+    width: 30%;
   }
+}
 
-  .banner .slogan ul{
+.autobiography .text h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2em;
+}
 
-    display: flex;
-    justify-content: space-around;
-    
-  }
+.autobiography .text p {
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
 
+/* RWD No */
 
-  .banner .slogan li{
-    text-align: center;
-    line-height: 80px;
-    border:2px black solid;
-    border-radius:50%;
-    width:150px;
-    height:150px;
-    margin-bottom: 150px;
-    display: flex;
-    
-  }
+.work-experience .container .item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 0px;
+  margin-left: 50px;
+  /* background-color: blanchedalmond; */
+}
 
-  .banner .slogan li a{
-      text-align: center;
-    line-height: 80px;
-    border:2px black solid;
-    border-radius:50%;
-    width:150px;
-    height:150px;
-    margin-bottom: 150px;
-    display: flex;
-  }
+.work-experience .container .item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  box-sizing: border-box;
+}
 
-  .banner .slogan a{
+.work-experience .container .item:nth-child(2):after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 15px;
+  left: -46px;
+  box-sizing: border-box;
+}
 
-    display: flex;
-    justify-content: space-around;
-    border:2px black solid;
-    width:300px;
-    height:100px;
-    text-align:center;
-    line-height:100px;
-  }
+.work-experience .container .item .text {
+  width: 80%;
+}
 
- 
-  
-  .table {
-    width: 90%;
-    margin: auto;
-  }
-  
-  .table table {
-    width: 100%;
+.work-experience .container .item .text h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+.work-experience .container .item .text ol {
+  padding: 10px 0px;
+}
+
+.work-experience .container .item .logo {
+  width: 20%;
+  text-align: right;
+  /* background-color: blue; */
+}
+
+.work-experience .container .item .logo img {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+  .work-experience .container .item .logo {
     text-align: left;
-    border-collapse: collapse;
-    margin: 50px 0px 500px;
-  }
-
- 
-
-
-  
-  .table table caption {
-    font-size: 24px;
-    margin-bottom: 100px;
-    margin-right: 850px;
-    
-  }
-  
-  
-  .table table thead .tr {
-    background-color: #eee;
-  }
-  
-  .table table thead .tr th:first-child,
-  .table table tbody .tr td:first-child {
-    padding-left: 10px;
-  }
-  
-
- 
-  
-  .th,
-  .td {
-    padding: 10px 0px;
-    font-size: 12px;
-    text-align: center;
-  }
-  
-  .tr {
-    border-top: 1px solid #ccc;
-  }
-  
-  
-  
-  /* RWD */
-  @media screen and (min-width: 768px) {
-    .table {
-      width: 70%;
-      margin: auto;
-    }
-  
-    .th,
-    .td {
-      font-size: 16px;c
-      text-align: left;
-    }
-  }
-  
-  .information {
-    padding: 50px;
-    padding-left: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: space-around;
-    background: linear-gradient(45deg, grey,black);
-    position: relative;
-  }
-
- 
-  
-
-  
- 
- 
-
-  
- 
- 
-  
-  /* RWD */
-  @media screen and (min-width: 768px) {
-
-  
-  .footer {
-    background: #eee;
-    padding: 30px 30px 50px;
-    text-align: center;
-    display: flex;
-      justify-content: space-between;
-   
-  }
-  
-   
-    .footer .contact .text {
-      justify-content: flex-start;
-      flex-direction: row;
-      margin-top: 0;
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-      line-height: 2em;
-    }
   }
 }
-  
+
+.product .container .item .pic {
+  width: 100%;
+}
+
+.product .container .item .pic img {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.product .container .item .text {
+  margin: 20px 0px;
+}
+
+.product .container .item .text a {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+.product .container .item .text .tech,
+.product .container .item .text p {
+  line-height: 1.5em;
+}
+
+.product .container .item .text p {
+  letter-spacing: 0.1em;
+  padding: 10px 0px;
+}
+
+/* RWD */
+@media screen and (min-width: 768px) {
+  .product {
+    height: 100%;
+  }
+  .product .container .item {
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .product .container .item:nth-child(3) .pic {
+    order: 1;
+  }
+  .product .container .item .pic {
+    width: 60%;
+  }
+
+  .product .container .item .text {
+    width: 30%;
+  }
+}
